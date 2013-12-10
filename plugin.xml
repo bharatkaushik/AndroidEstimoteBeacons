@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+          id="org.bkaushik.estimotebeacons"
+      version="0.1.0">
+    <name>EstimoteBeacons</name>
+    <description>Sample Estimote Beacon Plugin for Android</description>
+    <license>MIT</license>
+    <keywords>phonegap,estimote</keywords>
+ 
+ 
+    <js-module src="www/EstimoteBeacons.js" name="EstimoteBeacons">
+        <clobbers target="EstimoteBeacons" />
+    </js-module>
+ 
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="EstimoteBeacons">
+                <param name="android-package" value="org.bkaushik.estimotebeacons"/>
+			 <param name="onload" value="true" />
+            </feature>
+        </config-file>
+ 
+        <source-file src="src/android/EstimoteBeacons.java" target-dir="org.bkaushik.estimotebeacons" />      
+     </platform>          
+</plugin>
