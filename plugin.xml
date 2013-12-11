@@ -17,11 +17,11 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="EstimoteBeacons">
-                <param name="android-package" value="org.bkaushik.estimotebeacons"/>
+                <param name="android-package" value="org.bkaushik.estimotebeacons.EstimoteBeacons"/>
 			 <param name="onload" value="true" />
             </feature>
         </config-file>
  
-        <source-file src="src/android/EstimoteBeacons.java" target-dir="org.bkaushik.estimotebeacons" />      
+        <source-file src="src/android/EstimoteBeacons.java" target-dir="src/org/bkaushik/estimotebeacons" />      
      </platform>          
 </plugin>
